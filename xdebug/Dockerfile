@@ -6,4 +6,4 @@ RUN docker-php-ext-install mysqli pdo pdo_mysql pcntl \
     && echo "xdebug.remote_enable=on" >> /usr/local/etc/php/conf.d/xdebug.ini \
     && echo "xdebug.remote_autostart=off" >> /usr/local/etc/php/conf.d/xdebug.ini
 
-ENTRYPOINT ["php"]
+CMD ["php"]
